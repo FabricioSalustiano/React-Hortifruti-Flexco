@@ -20,8 +20,8 @@ O maior desafio do projeto foi conseguir solucionar o erro de Cors que ocorria q
 
 Com muita pesquisa vi que não seria possível realizar alguma ação por parte do front-end pois o erro ocorre quando sua URL não é a mesma que a do provedor dos dados, no caso a API externa, ou quando o provedor da API não habilitou para que todas as URLs acessassem seus dados. Poderíamos neste caso contatar os provedores da API e requisitar com que colocassem minha URL da aplicação em sua lista de liberados, o que não era possível pois não daria tempo de entregar o projeto na data marcada, ou eu poderia intermediar as requisições através de um servidor criado por mim. Acontece que quando as requisições são feitas de servidor para servidor, não há a verificação de URL pelo Cors. Neste caso decidi por criar um servidor, realizar as requisições a ele e ele que se encarregue de requisitar para API os dados e me enviar de volta.
 
-Então quando rodar esta aplicação, lembre de dar um Start no servidor que está localizado na pasta “intermediateServer”.
-
+Então quando rodar esta aplicação, lembre de dar um Start no servidor que está localizado no diretorio:
+<https://github.com/FabricioSalustiano/NodeJs-ServidorAuxiliar>
  
 
 ##  Tela inicial
