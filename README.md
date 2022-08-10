@@ -14,7 +14,7 @@ O maior desafio do projeto foi conseguir solucionar o erro de Cors que ocorria q
 
  
 
-![alt text](imgReadme\corsErro.png)
+![alt text](./imgReadme/corsErro.png)
 
  
 
@@ -30,7 +30,7 @@ Nesta tela é possível verificar os produtos disponíveis para compra, adicion�
 
  
 
-![alt text](imgReadme\telaInicial.png)
+![alt text](imgReadme/telaInicial.png)
 
  
 
@@ -38,11 +38,11 @@ Adicionando o produto clicando no botão “Add to Cart” podemos verificar que
 
 
 
-![alt text](imgReadme\adicionandoCarrinho.png)
+![alt text](imgReadme/adicionandoCarrinho.png)
 
  
 
-![alt text](imgReadme\itemAdicionado.png)
+![alt text](imgReadme/itemAdicionado.png)
 
 
 
@@ -54,7 +54,7 @@ Nesta tela será possível você realizar a alteração de quantidades e a exclu
 
  
 
-![alt text](imgReadme\telaCarrinho.png)
+![alt text](imgReadme/telaCarrinho.png)
 
  
 
@@ -66,15 +66,14 @@ Retornando a tela incial, temos a opção de clicar nas imagens dos produtos ou 
 
  
 
-![alt text](imgReadme\clickLinkProdutosInfo.png)
+![alt text](imgReadme/clickLinkProdutosInfo.png)
 
  
 
-![alt text](imgReadme\informacoesProduto1.png)
+![alt text](imgReadme/InformacoesProduto1.png)
 
 
 
 
-
-![alt text](imgReadme\informacoesProduto2.png)
+![alt text](imgReadme/informacoesProduto2.png)
 
