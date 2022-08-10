@@ -1,0 +1,33 @@
+.listItensCart {
+    display: flex;
+    padding:10px ;
+    margin-top: 40px;
+    margin-left: 40px;
+    gap: 50px;
+    border-radius: 15px;
+    background-color: rgb(202, 240, 198);
+}
+
+.listItensCart img {
+    width: 100px;
+    height: 70px;
+    border: 2px solid rgb(95, 95, 95);
+    border-radius: 30px;
+}
+
+.elementsInterface {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.elementsQuantity{
+    display: flex;
+    gap: 20px
+}
+
+.elementsQuantity button {
+    width: 30px;
+    border-radius: 15px;
+    border-width: 1px;
+}

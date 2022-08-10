@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Hortifruit - Flexco
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi feito durante um processo seletivo para vaga de estágio em front-end.
 
-## Available Scripts
+ 
 
-In the project directory, you can run:
+Como desafio tive que criar um projeto que continha uma tela de catálogo, listagem dos produtos dentro do meu carrinho e uma tela com informações do produto de forma individual. Também era necessário fazer uso de uma API definida por ele, para inserir todas as informações dos produtos que seriam necessárias.
 
-### `npm start`
+API Fruityvice documentação: <https://www.fruityvice.com/doc/index.html>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O maior desafio do projeto foi conseguir solucionar o erro de Cors que ocorria quando realizava as requisições diretamente da minha aplicação.
 
-### `npm test`
+ 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![alt text](imgReadme\corsErro.png)
 
-### `npm run build`
+ 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Com muita pesquisa vi que não seria possível realizar alguma ação por parte do front-end pois o erro ocorre quando sua URL não é a mesma que a do provedor dos dados, no caso a API externa, ou quando o provedor da API não habilitou para que todas as URLs acessassem seus dados. Poderíamos neste caso contatar os provedores da API e requisitar com que colocassem minha URL da aplicação em sua lista de liberados, o que não era possível pois não daria tempo de entregar o projeto na data marcada, ou eu poderia intermediar as requisições através de um servidor criado por mim. Acontece que quando as requisições são feitas de servidor para servidor, não há a verificação de URL pelo Cors. Neste caso decidi por criar um servidor, realizar as requisições a ele e ele que se encarregue de requisitar para API os dados e me enviar de volta.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Então quando rodar esta aplicação, lembre de dar um Start no servidor que está localizado na pasta “intermediateServer”.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ 
 
-### `npm run eject`
+##  Tela inicial
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Nesta tela é possível verificar os produtos disponíveis para compra, adicioná-los no carrinho e ver uma previa de suas informações.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![alt text](imgReadme\telaInicial.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ 
 
-## Learn More
+Adicionando o produto clicando no botão “Add to Cart” podemos verificar que o ícone do carrinho se altera indicando que o item foi adicionado.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+![alt text](imgReadme\adicionandoCarrinho.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ 
 
-### Analyzing the Bundle Size
+![alt text](imgReadme\itemAdicionado.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+##  Tela do Carrinho
 
-### Advanced Configuration
+Clicando no próprio ícone do carrinho, temos o redirecionamento para a tela de listagem de itens onde mostrará todos ou nenhum item, em resumo o que estiver dentro de seu carrinho.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Nesta tela será possível você realizar a alteração de quantidades e a exclusão individual dos itens ou total ao clicar no botão “Clear Cart".
 
-### Deployment
+ 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![alt text](imgReadme\telaCarrinho.png)
 
-### `npm run build` fails to minify
+ 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##  Tela de informações do produto
+
+ 
+
+Retornando a tela incial, temos a opção de clicar nas imagens dos produtos ou em seu nome que nos redirecionará para a tela que irá conter todas suas informações.
+
+ 
+
+![alt text](imgReadme\clickLinkProdutosInfo.png)
+
+ 
+
+![alt text](imgReadme\informacoesProduto1.png)
+
+
+
+
+
+![alt text](imgReadme\informacoesProduto2.png)
+

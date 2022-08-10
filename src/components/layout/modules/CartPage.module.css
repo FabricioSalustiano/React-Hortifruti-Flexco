@@ -1,0 +1,42 @@
+.cartItensWrapper {
+    display: flex;
+    flex-direction: column; 
+    min-height: 63vh;
+}
+
+.headerCartItens {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconRetornPage {
+    float: left;
+    width: 80px;
+    height: 80px;
+    color: black;
+    margin-left: 20px;
+}
+
+.btnClearCart{
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border-width: 1px;
+    background-color: rgb(16, 175, 77);
+    color: white;
+    margin: 50px 160px 20px 0px;
+    font-size: 16px;
+}
+
+.ItensWrapper {
+    width: 1050px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(185, 185, 185);
+    border-radius: 15px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
